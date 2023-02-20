@@ -16,9 +16,12 @@ const Home = () => {
         <SafeAreaView style={tw`bg-[#1B264B] flex-1`}>
             <View style={tw`h-1/2 w-full`}>
                 <Image
-                    source={{
-                        uri: "/Users/dannylee/projects/personal-color/assets/colorpalette.png",
-                    }}
+                    source={require("../assets/colorpalette.png")}
+                    //! for simulator use in case require throws error
+                    // source={{
+                    //     uri: "/Users/dannylee/projects/personal-color/assets/colorpalette.png",
+                    // }}
+
                     style={{
                         width: 400,
                         height: 400,
